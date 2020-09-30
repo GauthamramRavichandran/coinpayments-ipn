@@ -12,9 +12,9 @@ def receive_ipn():
                               msg = request.get_data(), # raw POST data will be passed here
                               digestmod = hashlib.sha512).hexdigest()
 	if received_hmac == generated_hmac:
-    pass  # do your thing here, notify user, save txn in DB ...
-  else:
-    pass # ignore, since it's not the right one
+   	  pass  # do your thing here, notify user, save txn in DB ...
+  	else:
+    	  pass # ignore, since it's not the right one
 
 
 if __name__ == "__main__":
